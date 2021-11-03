@@ -10,12 +10,12 @@ function CreatePost() {
         await fetch('http://netcraft-hackathon.herokuapp.com/post', {
             method: 'POST',
             body: JSON.stringify({
-                message
+                message,
+                name: 'Tamir'
             }),
             headers: {
                 'Content-Type': 'application/json'
             },
-            credentials: 'include'
         });
     }
 
