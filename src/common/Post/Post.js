@@ -1,12 +1,23 @@
 import React from 'react';
 import './Post.css';
 
-function Post() {
+function Post({data}) {
+
     return (
-        <div>
-            
+        <div className="feed">
+            <div className="post">
+                <div className="post-name">
+                   <div className='name-1'>Name:</div><div>{data.name}</div>
+                    </div>
+                <div className="post-time">
+                    <div className="time-1">Posted at</div><div className="time-2">{data.time}</div>
+                    </div>
+                <div className="post-message">
+                    {data.message}
+                    </div>
+
+            </div>
         </div>
-    );
-}
+)}
 
 export default Post;
