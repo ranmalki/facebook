@@ -1,16 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './CreatePost.css';
 
 function CreatePost() {
+
+    const [message, setMessage] = useState('');
+
+    async function submit(e) {
+        e.preventDefault();
+        await fetch('http://netcraft-hackathon.herokuapp.com/post', {
+            method: 'POST',
+            body: JSON.stringify({
+                message
+            }),
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            credentials: 'include'
+        });
+    }
+
     return (
         <div className="create-post-wrapper">
-            <div className="create-post">
+            <form className="create-post" onSubmit={submit}>
                 <h1 className="create-post-header">Create post</h1>
-                <input className="post-input" placeholder="What's on your mind?" />
+                <input value={message} onChange={e => setMessage(e.target.value)} className="post-input" placeholder="What's on your mind?" />
                 <div className="create-post-btn-wrapper">
                     <button className="create-post-btn">Submit</button>
                 </div>
-            </div>
+            </form>
         </div>
     );
 }
