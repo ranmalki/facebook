@@ -1,7 +1,5 @@
 import React from 'react';
-import CreatePost from '../CreatePost/CreatePost';
-import Header from '../Header/Header'
-import './Feed.scss';
+import './Feed.css';
 
 function Feed() {
     return (

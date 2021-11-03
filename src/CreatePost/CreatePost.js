@@ -1,5 +1,5 @@
 import React from 'react';
-import './CreatePost.scss';
+import './CreatePost.css';
 
 function CreatePost() {
     return (
