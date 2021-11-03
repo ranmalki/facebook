@@ -1,0 +1,8 @@
+.header {
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 15px;
+    color: #FFFFFF;
+background: #8687f1;
+text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
