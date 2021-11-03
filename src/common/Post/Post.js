@@ -1,4 +1,5 @@
 import React from 'react';
+import Like from './Like/Like';
 import './Post.css';
 
 function Post({data}) {
@@ -15,6 +16,8 @@ function Post({data}) {
                 <div className="post-message">
                     {data.message}
                     </div>
+                <div><Like /></div>
+                
 
             </div>
         </div>
