@@ -3,8 +3,7 @@ import Header from './Header/Header';
 import Feed from './Feed/Feed';
 import CreatePost from './CreatePost/CreatePost';
 import Register from './Register/Register';
-import { Route, Switch } from 'react-router';
-import { BrowserRouter as Router } from "react-router-dom";
+import {Route, Switch, BrowserRouter as Router } from "react-router-dom";
 
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
             <Register path="/register" />
           </Route>
           <Route>
-            <Feed />
+            <Feed exact path="/" />
           </Route>
         </Switch>
 
