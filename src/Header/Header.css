@@ -1,8 +1,9 @@
 .header {
     background-color: cornflowerblue;
+    margin-top: 10px;
     text-align: center;
     padding: 15px;
     color: #FFFFFF;
-background: #8687f1;
+background: rgba(40, 161, 247, 0.55);
 text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
 }
