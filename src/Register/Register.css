@@ -1,0 +1,14 @@
+.register {
+    margin: 0 5px 0 25px;
+    width: 250px;
+    text-align: center;
+    color: #8687F1 ;
+    border: 1px solid black;
+    padding: 15px;
+    align-self: center;
+}
+
+input {
+    padding: 2px;
+    margin: 5px;
+}
